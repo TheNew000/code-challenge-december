@@ -1,21 +1,43 @@
-# code-challenge-december
-## Code Exercise in Node & Angular ##
-Please complete as much of this as possible within three hours (mercy rule). If after three hours, you have not completed it, please submit the work you have. Fork the repository, or if you wish for privacy, download and create your own repository, and work on it from there. It's not the speed at which this project is completed, it's the quality of the code and the reasoning behind it. *Follow the mockup for design.*
+#Liaison Coding Challenge!
 
-### Challenge ####
-Ron is new to GitHub and is scared of the internet. Please make an application that makes it easy for him to do what he needs to without leaving the application.
+![Screen Shot](../master/css/img/screenshot.png "An exact replica!")
 
-Here's the functional requirements Ron insists on.
+##Objective:
+Complete the coding challenge in 3 hours.
 
- - He needs to be able to run the application locally
- - He needs to connect to the [GitHub API](https://developer.github.com/v3/users/)
- - He needs an input field to input his search term
- - The results need to return back on the same page (we can limit it to the first 10, he doesn't want pagination)
- - If the search includes the term "Ron", [rick roll em'](https://www.youtube.com/watch?v=dQw4w9WgXcQ) because he's a narcissist 
- - You can use any Node / Angular libraries you want.
+1.  Application successfully connects to github API and can be run locally.
 
+2.  User is able to input a search term that returns no more than 10 users matching the search query
 
-Here's the mockup to base the design on (also under mockup_example.png).
+3.  User is "rick-rolled" if search term includes the consecutive character string 'ron' (i.e. 'Bronson' will trigger the "rick-roll")
 
+##Extra Sparkles (as Joe calls it):
 
-Once you're done with the challenge, email me back the link to your repository or fork.
+1.  Scroll bar for results
+
+2.  Input Validation
+
+3.  A directive for the user cards
+
+4.  A service to handle the calls to Github's API and return the data collected
+
+##Biggest Challenge:
+Learning to call app.js last!  I had no idea that could affect the flow and at the 11th hour I decided to create a service for retrieving the users and almost scrapped all the work until I started playing with the order of my script tags.
+
+###Try it yourself!
+
+In your Terminal you should - 
+
+Enter the project folder:
+
+`cd liaison`
+
+Run this command to install all dependencies:
+
+`npm install`
+
+Run this command to run the application on localhost:3000:
+
+`node server`
+
+In your browser window navigate to localhost:3000.  Have fun!
