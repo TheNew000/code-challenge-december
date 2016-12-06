@@ -41,7 +41,7 @@
                                         userData.location = "Parts Unknown!";
                                     }
                                     // Here we define the user object
-                                    const userInfo = {
+                                    let userInfo = {
                                         login: userData.login,
                                         avatar: userData.avatar_url,
                                         bio: userData.bio,
@@ -58,6 +58,7 @@
             };
             // This function returns the populated array
             const getUsers = () => {
+                console.log(dataArray);
                 return dataArray;
             };
             // This returns which functions will have a global scope.
