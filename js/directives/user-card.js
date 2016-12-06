@@ -9,14 +9,32 @@
 //     });
 // })();
 
+// (function () {
+//     angular.module("gitChallenge")
+//     .component("userCard", {
+//         bindings: {
+//             user: '<'
+//         },
+//         templateUrl: "templates/card-directive.html",
+//         controller: UserCardCtrl
+//     });
+//     function UserCardCtrl(){};
+// })();
+
 (function () {
-    angular.module("gitChallenge")
+  'use strict';
+
+  angular
+    .module("gitChallenge")
     .component("userCard", {
-        bindings: {
-            user: '<'
-        },
-        templateUrl: "templates/card-directive.html",
-        controller: userCardCtrl
+      bindings: {
+        user: '<',
+        index: '@'
+      },
+      templateUrl: "templates/card-directive.html",
+      controller: UserCardCtrl
     });
-    function userCardCtrl(){};
+
+  function UserCardCtrl(){};
 })();
+

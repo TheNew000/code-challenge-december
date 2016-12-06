@@ -27,7 +27,7 @@
     </div>
     <div class="col-md-7 right">
         <div class="row" ng-repeat="user in results track by $index">
-            <user-card user="user"></user-card>
+            <user-card user="user" index="{{$index}}"></user-card>
         </div>
 
     </div>
