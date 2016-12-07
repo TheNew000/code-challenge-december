@@ -1,3 +1,5 @@
+// import angular from 'angular';
+
 // Here we define the directive as an element and connect the template to the element tag
 // (function () {
 //     angular.module("gitChallenge")

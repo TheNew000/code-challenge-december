@@ -27,16 +27,20 @@
     </div>
     <div class="col-md-7 right">
         <div class="row" ng-repeat="user in results track by $index">
-            <user-card user="user" index="{{$index}}"></user-card>
+            <user-card user="user" index="{{$index + 1}}"></user-card>
         </div>
 
     </div>
 
+<!-- Dependencies -->
 <script type="text/javascript" src="node_modules/angular/angular.js"></script>
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/services/user.service.js"></script>
-<script type="text/javascript" src="js/directives/user-card.js"></script>
+
+<!-- App Files -->
 <script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/services/user.service.js"></script>
+<script type="text/javascript" src="js/components/user-card.js"></script>
+<script type="text/javascript" src="js/controllers/main.controller.js"></script>
 </body>
 </html>

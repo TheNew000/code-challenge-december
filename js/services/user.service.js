@@ -1,7 +1,9 @@
+// import angular from 'angular';
+
 // This service makes the $http.get() requests to the github API and returns an array filled with the first 10 users to appear based on the user input.
 (function () {
     angular
-        .module('gitChallenge', [])
+        .module('gitChallenge')
         .service('userService', function($http) {
             // A global variable inside the service for the functions to access
             let dataArray = [];
