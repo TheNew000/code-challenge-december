@@ -4,13 +4,13 @@
     angular
         .module('gitChallenge')
         .controller('gcCtrl', ['$scope', '$http', 'userService', function($scope, $http, userService) {
-            // $scope.getUsers = () => {
-            //    userService.getUsers({ /* These are optional parameters for your request */}, (data) => {
-            //      $scope.results = data;
-            //    }, () => {
-            //      // This is the error callback and it would be best if you wrote something for this.
-            //    });
-            //  }
+            $scope.getUsers = () => {
+               userService.getUsers({userInput: $scope.userInput}, (data) => {
+                 $scope.results = data;
+               }, () => {
+                 // This is the error callback and it would be best if you wrote something for this.
+               });
+             }
             $scope.getUsers = () => {
                 // Here we make the first call which passes the input from the user to the service
                 userService.findUsers($scope.userInput);
